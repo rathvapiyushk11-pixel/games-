@@ -1,0 +1,5 @@
+function startGame(){
+document.getElementById("login").style.display="none";
+document.getElementById("game").style.display="block";
+alert("Game Started!");
+}

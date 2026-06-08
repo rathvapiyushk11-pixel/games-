@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PK Gamer Battle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+<h1>PK Gamer</h1>
+<input type="email" placeholder="Enter Gmail">
+<button onclick="startGame()">Login</button>
+</div>
+
+<div id="game" style="display:none;">
+<h2>Score: <span id="score">0</span></h2>
+<canvas id="canvas"></canvas>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html> 
