@@ -1,39 +1,53 @@
+<!DOCTYPE html>
+<html>
 <head>
 <meta charset="UTF-8">
-<title>PK Gamer Battle</title>
-<link rel="stylesheet" href="style.css">
+<title>PK Gamer</title>
+
+<style>
+body{
+    margin:0;
+    background:black;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+}
+
+button{
+    padding:10px 20px;
+    font-size:18px;
+}
+
+#game{
+    display:none;
+}
+</style>
+
 </head>
 <body>
 
 <div id="login">
-<h1>PK Gamer</h1>
-<input type="email" placeholder="Enter Gmail">
-<button onclick="startGame()">Login</button>
+    <h1>PK Gamer</h1>
+
+    <input type="email" id="gmail" placeholder="Enter Gmail">
+    <br><br>
+
+    <button onclick="startGame()">Login</button>
 </div>
 
-<div id="game" style="display:none;">
-<h2>Score: <span id="score">0</span></h2>
-<canvas id="canvas"></canvas>
+<div id="game">
+    <h1>🎮 Welcome To PK Gamer</h1>
+    <h2>Game Started!</h2>
 </div>
 
-<script src="game.js"></script>
-</body>
-</html>  
-body{
-margin:0;
-background:black;
-color:white;
-text-align:center;
-font-family:Arial;
-}
-
-canvas{
-background:#222;
-border:2px solid white;
-}
-
+<script>
 function startGame(){
-document.getElementById("login").style.display="none";
-document.getElementById("game").style.display="block";
-alert("Game Started!");
+
+    document.getElementById("login").style.display="none";
+
+    document.getElementById("game").style.display="block";
 }
+</script>
+
+</body>
+</html>
